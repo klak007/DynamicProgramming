@@ -54,12 +54,12 @@ import matplotlib.cm as cm
 # c = 1
 
 N = 4
-u_values = [0, 1, 2, 4, 5, 6]
+u_values = [1, 2, 3, 4]
 x0 = 0
-xN = 10
-a = 5
-b = 2
-c = 7
+xN = 8
+a = 2
+b = 1
+c = 4
 
 
 def min_u():
@@ -213,7 +213,8 @@ def plot_transitions():
     plt.yticks(state_values)
     plt.title(f'State Transitions for N = {N} \n u = {u_values}\n x0 = {x0}, xN = {xN} ')
     plt.grid(True)
-    plt.savefig(f'N_{N}_u_{u_values}_x0_{x0}_xN_{xN}.png')
+    # save in plots directory
+    plt.savefig(f'plots/N_{N}_u_{u_values}_x0_{x0}_xN_{xN}.png')
     plt.show()
 
 
